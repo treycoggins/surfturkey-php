@@ -1,0 +1,52 @@
+#about {
+  grid-column: main-start / main-end;
+  background-image: linear-gradient(
+      rgba($color-bg-light, 0.8),
+      rgba($color-bg-light, 0.8)
+    ),
+    url(../../../public/img/bg-about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  row-gap: 4rem;
+
+  .header {
+    grid-column: main-start / main-end;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    row-gap: 4rem;
+  }
+
+  .main {
+    grid-row: 3 / 4;
+    grid-column: main-start / main-end;
+  }
+  .about {
+    & p {
+      line-height: 1.6;
+    }
+    &__img {
+      height: 30rem;
+      width: 25rem;
+      border-radius: 5px;
+      margin: 1.2rem;
+    }
+    &__adia {
+      margin-top: 12rem;
+    }
+  }
+
+  #trey-court {
+    float: left;
+  }
+  #dogs-photo {
+    float: right;
+  }
+  #adia {
+    float: left;
+  }
+  .footer {
+    grid-row: 5 / 6;
+  }
+}

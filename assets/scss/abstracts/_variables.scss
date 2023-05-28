@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$color-bg-light: #f6f1f1;
+$color-bg-dark: #146c94;
+$color-font-primary: #008fd1;
+$color-font-secondary: #585858;
+$color-font-tertiary: #001685;
+$color-white: #ffffff;
+$color-black: #1f1f1f;
+$color-gray-light: #f1f1f1;
+$color-gray-dark: #888888;
+
+
+// FONT WEIGHTS
+$fw-thin: 100;
+$fw-lighter: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-heavy: 900;
+
+
+// TYPEFACES
+$font-display: 'Lato', sans-serif;
+$font-primary: 'Montserrat', sans-serif;
+
+// RESPONSIVE FONT SIZES
+$size-heading-1: clamp(4rem, 8vw, 8rem);
+$size-heading-2: clamp(2.5rem, 4vw, 6rem);
+$size-heading-3: clamp(1.8rem, 4vw, 4rem);
+$size-heading-4: clamp(2rem, 4vw, 4rem);
+$size-heading-5: clamp(1.6rem, 2vw, 3rem);
+$size-heading-6: clamp(1rem, 2vw, 1.6rem);
+$size-p: clamp(1.6rem, 2vw, 2rem);
+
+// RESPONSIVE BREAKPOINTS
+$bp-phone: 480px;
+$bp-tabport: 768px;
+$bp-tabland: 1080px;
+$bp-laptop: 1280px;
+$bp-desktop: 1440px;
+

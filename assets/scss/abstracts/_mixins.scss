@@ -1,0 +1,17 @@
+@mixin underline {  // Goes on the after pseudo selector - make link position relative
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.6px;
+  bottom: 0;
+  left: 0;
+  background-color: $color-font-primary;
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+@mixin underline_after {  // Goes on the hover state of the after pseudo selector
+  transform: scaleX(1.1);
+  transform-origin: left
+}
