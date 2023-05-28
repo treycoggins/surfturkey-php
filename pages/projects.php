@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php include('includes/_head.php'); ?>
 
 <body id="projects" class="container">
@@ -64,8 +61,3 @@
 
   
   <?php include('includes/_footer.php'); ?>
-
-  <script src="src/js/app.js"></script>
-</body>
-
-</html>

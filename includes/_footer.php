@@ -3,3 +3,6 @@
     This website was designed by SurfTurkey.net &copy; 2023
   </h6>
 </footer>
+
+</body>
+</html>

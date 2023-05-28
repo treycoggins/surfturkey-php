@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php include('includes/_head.php'); ?>
 
 <body id="contact" class="container">
@@ -133,8 +130,3 @@
   </main>
 
   <?php include('includes/_footer.php'); ?>
-
-  <script src="src/js/app.js"></script>
-</body>
-
-</html>

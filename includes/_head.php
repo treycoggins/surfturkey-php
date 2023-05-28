@@ -1,3 +1,6 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +15,7 @@
   <link rel="icon" href="../public/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="../public/css/main.css" type="text/css">
 
-  <script src="../publci/js/main.js"></script>
+  <script src="../public/js/main.js"></script>
   <!-- Google tag (gtag.js) -->
   <script>
     window.dataLayer = window.dataLayer || [];

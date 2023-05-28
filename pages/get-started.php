@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php include('includes/_head.php'); ?>
 
 <body id="get-started" class="container">
@@ -63,7 +60,3 @@
   </main>
 
   <?php include('includes/_footer.php'); ?>
-
-</body>
-
-</html>
