@@ -1,0 +1,9 @@
+.footer {
+  grid-column: main-start / main-end;
+  grid-row: 10vh;
+  align-self: end;
+ 
+  &__copyright {
+    align-self: end;
+  }
+}

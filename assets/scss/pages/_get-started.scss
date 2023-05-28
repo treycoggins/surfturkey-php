@@ -1,0 +1,29 @@
+#get-started {
+  background-image: linear-gradient(
+      rgba($color-white, 0.7),
+      rgba($color-white, 0.5)
+    ),
+    url(../../../public/img/bg-get-started.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .header {
+    grid-column: main-start / main-end;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-rows: 10vh 15vh;
+  }
+
+  .main {
+    grid-column: main-start / main-end;
+  }
+}
+
+@media only screen and (min-width: $bp-tabport) {
+  #get-started {
+    .main {
+      grid-column: col-start 3 / col-end 8;
+    }
+  }
+}

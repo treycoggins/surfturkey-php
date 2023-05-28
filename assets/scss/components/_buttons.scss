@@ -1,0 +1,80 @@
+/// Hamburger Menu Button
+.nav {
+  &__burger {
+    
+    &-bar {
+      display: block;
+      background-color: $color-bg-dark;
+      height: 2.5px;
+      width: 2.4rem;
+      position: relative;
+      
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        background-color: $color-bg-dark;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      &::before {
+        top: 8px;
+      }
+      &::after {
+        top: -8px;
+      }
+    }
+  }
+}
+
+/// Standard Button
+.btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 2px solid $color-bg-dark;
+  border-radius: 6px;
+  background-color: $color-bg-dark;
+  color: $color-gray-light;
+  box-shadow: 0px 4px 5px $color-gray-dark;
+  height: auto;
+  width: max-content;
+  transition: all 400ms ease;
+
+
+  &:active {
+    transform: translateY(.5rem);
+    box-shadow: 0px 2px 5px $color-black;
+  }
+}
+
+
+/// Outlined Button 
+
+.btn-outlined {
+  @extend .btn;
+  color: $color-font-secondary;
+  border: 2px solid $color-gray-dark;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-bg-dark;
+    color: $color-white;
+  }
+}
+
+// Header Button
+.btn-header {
+  width: max-content;
+  padding: 1rem 2rem;
+  color: $color-white;
+  background-color: $color-font-primary;
+  border: inset 2px solid;
+  font-size: $size-heading-6;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: auto auto;
+  font-family: $font-display;
+
+}

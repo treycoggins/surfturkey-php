@@ -1,0 +1,107 @@
+#home {
+  background-image: linear-gradient(
+      rgba($color-bg-light, 0.8),
+      rgba($color-bg-light, 0.8)
+    ),
+    url(../../../public/img/bg-home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+  row-gap: 4rem;
+
+  .header {
+    grid-column: col-start 2 / col-end 9;
+    grid-template-rows: repeat(4, 1fr);
+
+    &__heading {
+      align-self: end;
+    }
+    &__cta {
+      align-self: start;
+      justify-self: center;
+    }
+  }
+  .main {
+    grid-column: full-start / full-end;
+    background-color: rgba($color-white, 0.7);
+    display: grid;
+    grid-template-rows: 1fr 8rem min-content;
+    &__heading {
+      grid-row: 1 / 2;
+      &-img {
+        grid-row: 2 / 3;
+        height: 100%;
+        justify-self: center;
+      }
+      &-sub {
+        grid-row: 3 / 4;
+        & span {
+          font-style: italic;
+          color: $color-font-tertiary;
+        }
+      }
+    }
+  }
+
+  .process {
+    grid-column: col-start 2 / col-end 9;
+    grid-row: 4 / 5;
+    display: grid;
+    row-gap: 4rem;
+
+    &__item {
+      display: grid;
+      grid-template-rows: 8vh repeat(2, min-content);
+      row-gap: 1.5rem;
+    }
+    &__icon {
+      justify-self: center;
+      height: 100%;
+    }
+    &__title {
+      justify-self: center;
+    }
+  }
+  .footer {
+    grid-row: 5 / 6;
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: $bp-tabport) {
+  #home {
+    .header {
+      grid-column: col-start 2 / col-end 9;
+    }
+    .process {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content 1fr;
+      column-gap: 4rem;
+      &__heading {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-tabland) {
+  #home {
+    .header {
+      grid-column: col-start 2 / col-end 8;
+
+      &__cta {
+        display: none;
+      }
+    }
+    .process {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: min-content 1fr 1fr;
+      column-gap: 2.5rem;
+      &__heading {
+        grid-column: 1 / span 3;
+      }
+    }
+  }
+}

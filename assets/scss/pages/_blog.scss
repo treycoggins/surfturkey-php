@@ -1,0 +1,66 @@
+#blog {
+  background-image: linear-gradient(
+      rgba($color-bg-light, 0.6),
+      rgba($color-bg-light, 0.8)
+    ),
+    url(../../../public//img/bg-blog.jpg);
+  grid-column: main-start / main-end;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  row-gap: 4rem;
+
+  .header {
+    grid-column: main-start / main-end;
+    row-gap: 4rem;
+  }
+  .main {
+    grid-column: col-start 2 / col-end 9;
+    display: grid;
+    row-gap: 4rem;
+  }
+
+  .card {
+    background-color: $color-white;
+    box-shadow: 2px 2px 4px $color-gray-dark;
+    border-radius: 4px;
+    border: 2px solid $color-gray-dark;
+    width: 100%;
+
+    &__img {
+      width: 100%;
+    }
+    &__headings {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 1rem;
+    }
+
+    &__body {
+      height: 10rem;
+      overflow-y: hidden;
+      margin: 0 2rem;
+    }
+
+    &__button {
+      margin: 2rem 0 2rem 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-tabport) {
+  #blog {
+    .main {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: $bp-laptop) {
+  #blog {
+    .main {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 4rem;
+    }
+  }
+}

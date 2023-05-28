@@ -1,0 +1,31 @@
+#contact {
+  background-image: linear-gradient(
+      rgba($color-white, 0.3),
+      rgba($color-white, 0.5)
+    ),
+    url(../../../public//img/bg-contact.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  row-gap: 4rem;
+
+  .header {
+    grid-column: main-start / main-end;
+    grid-template-rows: min-content min-content;
+    row-gap: 4rem;
+  }
+  .main {
+    grid-column: main-start / main-end;
+  }
+}
+
+@media only screen and (min-width: $bp-tabport) {
+  #contact {
+    .header {
+      grid-column: col-start 1 / col-end 8;
+    }
+    .main {
+      grid-column: col-start 6 / col-end 9;
+    }
+  }
+}
