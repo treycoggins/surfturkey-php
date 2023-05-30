@@ -1,11 +1,22 @@
 <?php
 
 $requestPath = $_SERVER['REQUEST_URI'];
+$os = PHP_OS;
 
-$basePath = '/home/trey/Projects/surfturkey-php/';
+
+if(strtoupper(substr($os, 0, 3)) === 'LIN') {
+  $basePath = '/home/trey/Projects/surfturkey-php';
+} else if (strtoupper(substr($os, 0, 3)) === 'DAR') {
+  echo "Running MacOS";
+  $basePath = '/Users/treycoggins/Projects/surfturkey-php';
+}
+
+
+
 if (substr($requestPath, 0, strlen($basePath)) === $basePath) {
   $requestPath = substr($requestPath, strlen($basePath));
 }
+
 
 if ($requestPath === '/') {
   include 'pages/home.php';

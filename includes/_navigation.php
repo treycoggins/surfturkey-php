@@ -10,22 +10,22 @@
   </div>
   <ul class="nav__links">
     <li class="nav__item">
-      <a class="nav__link" href="/home">Home</a>
+      <a class="nav__link" href="home">Home</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/about">About</a>
+      <a class="nav__link" href="about">About</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/blog">Blog</a>
+      <a class="nav__link" href="blog">Blog</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/contact">Contact</a>
+      <a class="nav__link" href="contact">Contact</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/projects">Projects</a>
+      <a class="nav__link" href="projects">Projects</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/get-started">Get Started</a>
+      <a class="nav__link" href="get-started">Get Started</a>
     </li>
   </ul>
 </nav>
